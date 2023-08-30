@@ -1,0 +1,63 @@
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+main{
+    display: flex;
+}
+
+.izquierda,
+.derecha{
+    height: 100vh;
+    max-width: 50vw;
+    /* centrar a los hijos directos que es formulario */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+/* izquierda */
+.izquierda{
+background-color: #e3e3e3;
+}
+
+.izquierda__titulo{
+    font-size: 85px;
+    color: gray;
+    font-weight: 300px;
+}
+
+/* derecha */
+.derecha{
+background-color: #e8e8e8;
+}
+
+/* FORMULARIO */
+form{
+    width: 60%;
+}
+
+input,
+textarea,
+button{
+    padding: 10px;
+}
+ul{
+    /* separar y girar todo los li */
+    display: flex;
+    /* flex: column; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+}
+/* checkbox */
+li :nth-child(5){
+    /* display: flex; */
+    flex-direction: row;
+    gap: 5px;
+}

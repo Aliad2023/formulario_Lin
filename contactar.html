@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="izquierda">
+        <h4 class="comentario">Comentario</h4>
+      </section>
+      <section class="derecha">
+        <form action="">
+          <!-- Nombre -->
+          <!-- input:text -->
+          <ul>
+            <li>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            required
+            placeholder="introduce tu nombre"
+            name="nombre"
+            id=""/>
+            </li>
+            <li>
+          <!-- Apellido -->
+          <label for="apellido">Apellido</label>
+          <input type="text" placeholder="" name="apellidos" id="" />
+          <!-- Emali -->
+           </li>
+           <li>
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            required
+            placeholder="Introduce tu email"
+            name="mail"
+            id=""/>
+            </li>
+            <li>
+          <!-- comentarios -->
+                <textarea  
+            required
+            placeholder="Escriba aquí tus Comentarios"
+            name="comentario"
+            id="" 
+            cols="30"
+            rows="10"> 
+                </textarea>
+            </li>
+        <!-- <label for="">Terminos y Condiciones</label> -->
+
+        <!-- chekear  -->
+        <li>
+        <input type="checkbox"
+        checked
+        name="privacidad"
+        id="">
+            <p>
+                Utilizar mi email para enviarme publicidad
+            </p>
+        </li>
+        
+        <li>
+         <!-- Botones del formuario -->
+        <button type="reset">Resetear</button>
+        <button type="submit">Enviar</button>
+        </li>
+        </ul>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
