@@ -1,63 +1,59 @@
-html{
+/* INICIO */
+html {
     font-size: 16px;
     font-family: sans-serif;
-
 }
-main{
+
+/* MAIN */
+main {
     display: flex;
 }
 
 .izquierda,
-.derecha{
+.derecha {
+    width: 50vw;
     height: 100vh;
-    max-width: 50vw;
-    /* centrar a los hijos directos que es formulario */
+    /* centrar a los hijos directo */
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
 }
 
-/* izquierda */
-.izquierda{
-background-color: #e3e3e3;
+/* IZQUIERDA */
+.izquierda {
+    background-color: #d9d9d9;
 }
-
-.izquierda__titulo{
+.izquierda__titulo {
     font-size: 85px;
-    color: gray;
-    font-weight: 300px;
+    color: #7B7B7B;
+    font-weight: 300;
 }
-
-/* derecha */
-.derecha{
-background-color: #e8e8e8;
+/* DERECHA */
+.derecha {
+    background-color: #fcfcfc;
 }
 
 /* FORMULARIO */
-form{
+form {
     width: 60%;
 }
-
 input,
 textarea,
-button{
+button {
     padding: 10px;
 }
-ul{
-    /* separar y girar todo los li */
+ul {
+    /* separar y girar todos los li */
     display: flex;
-    /* flex: column; */
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
-
-li{
+li {
     display: flex;
     flex-direction: column;
 }
 /* checkbox */
-li :nth-child(5){
-    /* display: flex; */
+li:nth-child(5) {
     flex-direction: row;
     gap: 5px;
 }
