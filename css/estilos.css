@@ -30,6 +30,10 @@ h4, h5{
     /* gap: 80px; */
 }
 
+.izquierda:hover + .derecha{
+    filter: blur(5px) sepia(5%);
+}
+
 /* IZQUIERDA */
 .derecha {
     background-color: #fcfcfc;
@@ -65,13 +69,23 @@ form {
     width: 60%;
 }
 
+input:focus{
+    border: 0;
+    outline:1px dashed blue;
+    background-color: rgb(138, 138, 255);
+    color: white;
+}
+
 input,
 textarea,
 button {
     padding: 10px;
+    border-radius: 5px;
+    /* border: 0; */
 }
 
 ul {
+    list-style: none;
     /* separar y girar todos los li */
     display: flex;
     flex-direction: column;
@@ -98,4 +112,51 @@ li:nth-child(6) {
 .derecha form{
     /* !!!flex-grow,para coger el espacio que tiene en esta columna,1 es todo y 0.5 es la mitad,en este caso coge el espacio de space-between!!! */
     flex-grow: 0.5;
+}
+
+/* Para modificar placeholder */
+::placeholder{
+    color: rgb(203, 203, 203);
+}
+
+button{
+    border: 1px solid blue(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.716);
+    margin: 3px;
+}
+
+button:hover{
+    background-color: rgba(0, 255, 51, 0.916);
+
+    /* transform: ; */
+    /* tipo como animación */
+    
+    padding: 20px;
+    transition: 1s;
+}
+
+
+/*  */
+button:active{
+    background-color: blue;
+}
+
+/* Cuando el botón se mantiene pulsado*/
+button:focus{
+    background-color:yellow ;
+}
+
+
+/* Se utiliza en como enlace */
+a:active{
+    background-color: blue;
+}
+
+a{
+    background-color: blue;
+}
+
+input:hover, input:focus{
+    transform: scale(1.5);
+    transition: 1;
 }
